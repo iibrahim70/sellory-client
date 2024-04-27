@@ -1,13 +1,13 @@
 import Hero from "@/components/Hero";
 import Promotional from "@/components/Promotional";
-import Category from "@/components/Category";
+import ShopByCategory from "@/components/ShopByCategory";
 
 const Home = () => {
   return (
     <main>
       <Hero />
       <Promotional />
-      <Category />
+      <ShopByCategory />
     </main>
   );
 };

@@ -12,7 +12,7 @@ import categoryEleven from "@/assets/images/category-11.png";
 import categoryTwelve from "@/assets/images/category-12.png";
 import Image from "next/image";
 
-const Category = () => {
+const ShopByCategory = () => {
   // Array of category objects with images and titles
   const categories = [
     { image: categoryOne, title: "Category 1" },
@@ -48,4 +48,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default ShopByCategory;
