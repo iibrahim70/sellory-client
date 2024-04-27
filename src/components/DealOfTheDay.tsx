@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { FiShoppingCart } from "react-icons/fi";
 import { GoGitCompare } from "react-icons/go";
 import { HiMiniViewfinderCircle } from "react-icons/hi2";
+import Rating from "./ui/Rating";
 import banner from "@/assets/images/banner-2.png";
 
 const DealOfTheDay = () => {
@@ -16,8 +17,8 @@ const DealOfTheDay = () => {
       price: 1199.99,
       discount: 0.1,
       discountPrice: 1079.99,
-      ratings: 4.7,
-      ratingsNumber: 500,
+      rating: 4.7,
+      totalRatings: 500,
     },
     {
       title: "Apple MacBook Pro (M1 Chip)",
@@ -28,14 +29,14 @@ const DealOfTheDay = () => {
       price: 1299.99,
       discount: 0.05,
       discountPrice: 1234.99,
-      ratings: 4.9,
-      ratingsNumber: 300,
+      rating: 4.9,
+      totalRatings: 300,
     },
   ];
 
   return (
     <section className="section-wrapper py-10 space-y-10">
-      <h4>Deal Of TheDay</h4>
+      <h4>Deal Of The Day</h4>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {data?.map((item) => (
@@ -50,6 +51,11 @@ const DealOfTheDay = () => {
 
               <div className="space-y-3">
                 <h5 className="line-clamp-1">{item?.title}</h5>
+
+                <Rating
+                  rating={item?.rating}
+                  totalRatings={item?.totalRatings}
+                />
 
                 <div className="flex items-center gap-3">
                   <h5>${item?.discountPrice}</h5>
