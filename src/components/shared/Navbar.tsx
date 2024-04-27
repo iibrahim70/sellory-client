@@ -19,7 +19,7 @@ const Navbar = () => {
             placeholder="Search by Product Name"
             className="px-6 py-2 rounded-full outline-none w-full"
           />
-          <IoMdSearch className="absolute right-5 size-7" />
+          <IoMdSearch className="absolute right-10 size-7" />
         </div>
 
         {/* right side */}
