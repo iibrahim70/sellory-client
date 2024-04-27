@@ -33,7 +33,7 @@ const ShopByCategory = () => {
     <section className="section-wrapper py-10 space-y-10">
       <h4>Shop by Category</h4>
 
-      <div className="grid grid-cols-6 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
         {categories?.map((item) => (
           <div
             key={item?.title}

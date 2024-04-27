@@ -16,11 +16,11 @@ import americanExpressIcon from "../../assets/icons/american-express.png";
 const Footer = () => {
   return (
     <footer>
-      <div className="section-wrapper py-10 lg:py-20 flex flex-col lg:flex-row justify-between gap-20">
+      <div className="section-wrapper py-10 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
         <div className="space-y-5">
           <h1 className="text-2xl text-primary">Vortex Vault</h1>
           <p>Got Question? Call us 24/7</p>
-          <p className="font-semibold">(+1) 84382648364</p>
+          <p className="font-semibold">(+880) 123456789</p>
           <p>
             Register now & get you 10% <br /> offer from first order!
           </p>
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-[#DDDFDF] py-5">
-        <div className="section-wrapper flex items-center justify-between gap-10">
+        <div className="section-wrapper flex flex-wrap items-center justify-between gap-5 lg:gap-10">
           <p>All Rights Reserved. © 2024 Ibrahim Khalil</p>
 
           <div className="flex items-center gap-3">
