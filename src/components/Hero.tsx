@@ -41,9 +41,9 @@ const Hero = () => {
   const brandIcons = [iconOne, iconTwo, iconThree, iconFour];
 
   return (
-    <section className="section-wrapper pt-5 grid lg:grid-cols-10 gap-5">
+    <section className="section-wrapper py-5 grid lg:grid-cols-10 gap-5">
       {/* left side */}
-      <div className="col-span-2 shadow-md p-4 space-y-3.5">
+      <div className="col-span-2 bg-white shadow-md p-4 space-y-3.5">
         {categories?.map((category, index) => (
           <div key={index} className="flex items-center gap-1">
             <Image src={awardIcon} alt="Award Icon" />
@@ -53,7 +53,7 @@ const Hero = () => {
       </div>
 
       {/* middle */}
-      <div className="col-span-5 space-y-5 bg-red-500">
+      <div className="col-span-5 space-y-5">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -78,7 +78,7 @@ const Hero = () => {
           ))}
         </Swiper>
 
-        <div className="flex items-center justify-between gap-5 shadow-md p-5">
+        <div className="bg-white flex items-center justify-between gap-5 shadow-md p-5">
           {brandIcons?.map((icon, index) => (
             <div key={index} className="flex flex-col items-center gap-3">
               <Image src={icon} alt="Brand Icon" className="size-[60px]" />
@@ -89,7 +89,7 @@ const Hero = () => {
       </div>
 
       {/* right side */}
-      <div className="col-span-3 shadow-md p-5 space-y-4">
+      <div className="col-span-3 bg-white shadow-md p-5 space-y-4">
         <p>Good Afternoon, John Smith</p>
 
         <div className="flex flex-col items-center justify-center space-y-4">

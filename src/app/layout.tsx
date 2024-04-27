@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(poppins.className)}>
+      <body className={cn(poppins.className, "bg-[#E6E7E7]")}>
         <Navbar />
         {children}
       </body>
