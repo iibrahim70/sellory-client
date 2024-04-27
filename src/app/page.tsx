@@ -1,3 +1,4 @@
+import BannerOne from "@/components/BannerOne";
 import BannerTwo from "@/components/BannerTwo";
 import Hero from "@/components/Hero";
 import Promotional from "@/components/Promotional";
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Promotional />
       <ShopByCategory />
+      <BannerOne />
       <BannerTwo />
     </main>
   );
