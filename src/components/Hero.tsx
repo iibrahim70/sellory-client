@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import productImage from "@/assets/images/products-1.png";
 import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { FiShoppingCart } from "react-icons/fi";
 import bannerOne from "@/assets/images/hero-1.jpg";
 import bannerTwo from "@/assets/images/hero-2.jpg";
 import bannerThree from "@/assets/images/hero-3.jpg";
@@ -65,7 +65,7 @@ const Hero = () => {
             clickable: true,
           }}
           modules={[Autoplay, Pagination]}
-          className="mySwiper h-[70%]"
+          className="mySwiper h-[calc(70%-20px)]"
         >
           {bannerImages?.map((banner, index) => (
             <SwiperSlide key={index}>
@@ -78,7 +78,7 @@ const Hero = () => {
           ))}
         </Swiper>
 
-        <div className="bg-white flex items-center justify-between gap-5 shadow-md p-5">
+        <div className="bg-white flex items-center justify-between gap-5 shadow-md p-5 h-[30%]">
           {brandIcons?.map((icon, index) => (
             <div key={index} className="flex flex-col items-center gap-3">
               <Image src={icon} alt="Brand Icon" className="size-[60px]" />
@@ -103,9 +103,18 @@ const Hero = () => {
             <span className="text-primary font-bold ">Get Now</span>
           </p>
 
-          <Image src={productImage} alt="Product Image" />
+          <Image
+            src="https://dvf83rt16ac4w.cloudfront.net/upload/product/20211110_1636549088_550946.png"
+            width={235}
+            height={300}
+            alt="Product Image"
+            className="object-cover"
+          />
 
-          <Button className="w-full">Add To Cart</Button>
+          <Button className="w-full flex items-center gap-3">
+            <FiShoppingCart className="size-5" />
+            Add To Cart
+          </Button>
         </div>
       </div>
     </section>
