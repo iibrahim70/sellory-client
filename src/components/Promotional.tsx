@@ -1,5 +1,5 @@
 import Image from "next/image";
-import checkmarkIcon from "../assets/icons/checkmark.png";
+import checkmarkIcon from "@/assets/icons/checkmark.png";
 
 const Promotional = () => {
   // Create an array of promotional messages
@@ -20,7 +20,7 @@ const Promotional = () => {
   ];
 
   return (
-    <section className="section-wrapper flex items-center justify-between gap-5">
+    <section className="section-wrapper flex items-center justify-between gap-5 pb-10">
       {promotionalMessages?.map((item) => (
         <div
           key={item?.title}

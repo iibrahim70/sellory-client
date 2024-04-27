@@ -1,23 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import heroRight from "../assets/images/hero-right.png";
+import productImage from "@/assets/images/products-1.png";
 import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import bannerOne from "../assets/images/hero-1.jpg";
-import bannerTwo from "../assets/images/hero-2.jpg";
-import bannerThree from "../assets/images/hero-3.jpg";
-import iconOne from "../assets/icons/brand-icons-1.png";
-import iconTwo from "../assets/icons/brand-icons-2.png";
-import iconThree from "../assets/icons/brand-icons-3.png";
-import iconFour from "../assets/icons/brand-icons-4.png";
-import awardIcon from "../assets/icons/award.png";
+import bannerOne from "@/assets/images/hero-1.jpg";
+import bannerTwo from "@/assets/images/hero-2.jpg";
+import bannerThree from "@/assets/images/hero-3.jpg";
+import iconOne from "@/assets/icons/brand-icons-1.png";
+import iconTwo from "@/assets/icons/brand-icons-2.png";
+import iconThree from "@/assets/icons/brand-icons-3.png";
+import iconFour from "@/assets/icons/brand-icons-4.png";
+import awardIcon from "@/assets/icons/award.png";
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Hero = () => {
-  // Create an array of categories
+  // Categories for the sidebar navigation
   const categories = [
     "All Categories",
     "Cars and Motorcycles",
@@ -34,15 +34,15 @@ const Hero = () => {
     "Jewellery",
   ];
 
-  // Create an array of banner images
+  // Banner images for the slider
   const bannerImages = [bannerOne, bannerTwo, bannerThree];
 
-  // Create an array of brand icons
+  // Brand icons for display in the middle section
   const brandIcons = [iconOne, iconTwo, iconThree, iconFour];
 
   return (
     <section className="section-wrapper py-5 grid lg:grid-cols-10 gap-5">
-      {/* left side */}
+      {/* Left section with categories sidebar  */}
       <div className="col-span-2 bg-white shadow-md p-4 space-y-3.5">
         {categories?.map((category, index) => (
           <div key={index} className="flex items-center gap-1">
@@ -52,7 +52,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* middle */}
+      {/* Middle section with image slider and brand icons */}
       <div className="col-span-5 space-y-5">
         <Swiper
           spaceBetween={30}
@@ -88,7 +88,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* right side */}
+      {/* Right section with personal greeting and flash sale offer */}
       <div className="col-span-3 bg-white shadow-md p-5 space-y-4">
         <p>Good Afternoon, John Smith</p>
 
@@ -103,7 +103,7 @@ const Hero = () => {
             <span className="text-primary font-bold ">Get Now</span>
           </p>
 
-          <Image src={heroRight} alt="Hero Right Side Image" />
+          <Image src={productImage} alt="Product Image" />
 
           <Button className="w-full">Add To Cart</Button>
         </div>
