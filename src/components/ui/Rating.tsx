@@ -21,6 +21,5 @@ const Rating = ({ rating, totalRatings }: RatingProps) => {
     </div>
   );
 };
-Rating.displayName = "Rating";
 
 export default Rating;

@@ -19,7 +19,7 @@ const MostViewedItems = () => {
       <h4>Most Viewd Items</h4>
 
       <Carousel className="w-full">
-        <CarouselContent className="gap-5">
+        <CarouselContent className="gap-5 p-5">
           {shuffledArray?.map((item) => (
             <CarouselItem
               key={item?.title}
