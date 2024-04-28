@@ -2,13 +2,16 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Technologies Used](#technologies-used)
-3. [Project Overview](#project-overview)
-4. [Key Features](#key-features)
-5. [Getting Started](#getting-started)
-   - [Installation](#installation)
-   - [Running the Application](#running-the-application)
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Getting Started](#getting-started)
+
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+
+- [Contributing](#contributing)
 
 ## Introduction
 
@@ -45,11 +48,34 @@ Vortex Vault is designed to offer an immersive and intuitive e-commerce experien
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/iibrahim70/vortex-vault-front.git`
-2. Navigate to the project directory: `cd vortex-vault-front`
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/iibrahim70/vortex-vault-front.git/
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd vortex-vault-front
+   ```
 
 ### Running the Application
 
-1. Install dependencies: `pnpm i`
-2. Run the development server: `pnpm dev`
-3. Open http://localhost:3000 in your browser to view the application.
+1. Install dependencies:
+
+```bash
+pnpm i
+```
+
+2. Run the development server:
+
+```bash
+pnpm dev
+```
+
+Open http://localhost:3000 in your browser to view the application.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, improvements, or new features to add, please fork the repository and submit a pull request.
