@@ -11,16 +11,13 @@ import {
 } from "./ui/carousel";
 
 const MostViewedItems = () => {
-  // Shuffling the array
-  const shuffledArray = shuffleArray(productsData);
-
   return (
     <section className="section-wrapper py-10 space-y-10">
       <h4>Most Viewd Items</h4>
 
       <Carousel className="w-full">
         <CarouselContent className="gap-5 p-5">
-          {shuffledArray?.map((item) => (
+          {productsData?.map((item) => (
             <CarouselItem
               key={item?.title}
               className="bg-white shadow-md p-0 sm:basis-1/2 md:basis-1/3 xl:basis-1/4"
