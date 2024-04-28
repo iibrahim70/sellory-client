@@ -8,7 +8,7 @@
     "discount": 0.07,
     "discountPrice": 1115.99,
     "rating": 4.7,
-    "totalRatings": 500
+    "totalRating": 500
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "discount": 0.1,
     "discountPrice": 1439.99,
     "rating": 4.8,
-    "totalRatings": 200
+    "totalRating": 200
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "discount": 5,
     "discountPrice": 1044.99,
     "rating": 4.9,
-    "totalRatings": 500
+    "totalRating": 500
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "discount": 8,
     "discountPrice": 1471.99,
     "rating": 4.8,
-    "totalRatings": 350
+    "totalRating": 350
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "discount": 7,
     "discountPrice": 92.99,
     "rating": 4.7,
-    "totalRatings": 400
+    "totalRating": 400
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "discount": 10,
     "discountPrice": 314.99,
     "rating": 4.8,
-    "totalRatings": 300
+    "totalRating": 300
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "discount": 6,
     "discountPrice": 469.99,
     "rating": 4.9,
-    "totalRatings": 200
+    "totalRating": 200
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "discount": 9,
     "discountPrice": 163.79,
     "rating": 4.7,
-    "totalRatings": 450
+    "totalRating": 450
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "discount": 8,
     "discountPrice": 321.99,
     "rating": 4.8,
-    "totalRatings": 350
+    "totalRating": 350
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "discount": 7,
     "discountPrice": 464.99,
     "rating": 4.9,
-    "totalRatings": 300
+    "totalRating": 300
   },
   {
     "id": 11,
@@ -118,6 +118,6 @@
     "discount": 10,
     "discountPrice": 899.99,
     "rating": 4.9,
-    "totalRatings": 150
+    "totalRating": 150
   }
 ]

@@ -28,7 +28,7 @@ const DealOfTheDay = () => {
 
                 <Rating
                   rating={item?.rating}
-                  totalRatings={item?.totalRatings}
+                  totalRatings={item?.totalRating}
                 />
 
                 <div className="flex items-center gap-3">

@@ -15,9 +15,9 @@ const OnSellingProducts = () => {
             <Image
               src={item?.image}
               alt={item?.title}
-              width={130}
-              height={200}
-              className="object-cover h-full"
+              width={500}
+              height={500}
+              className="size-40 h-full object-cover"
             />
 
             <div className="space-y-3 py-5 pr-5">

@@ -7,6 +7,7 @@ import DealOfTheDay from "@/components/DealOfTheDay";
 import OnSellingProducts from "@/components/OnSellingProducts";
 import Brand from "@/components/Brand";
 import TopVendors from "@/components/TopVendors";
+import DailyDiscover from "@/components/DailyDiscover";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Brand />
       <TopVendors />
       <BannerTwo />
+      <DailyDiscover />
     </main>
   );
 };

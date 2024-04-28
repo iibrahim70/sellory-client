@@ -45,7 +45,7 @@ const Brand = () => {
         </div>
 
         <button className="flex items-center gap-2">
-          <p className="font-bold">See More</p>
+          <p className="font-semibold">See More</p>
           <FaArrowRight />
         </button>
       </div>
