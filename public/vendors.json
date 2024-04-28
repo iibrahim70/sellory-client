@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Electronics Superstore",
+    "avatar": "https://i.pinimg.com/originals/dc/f4/8b/dcf48b9433f25c5662e9f238487d4e59.png",
+    "images": [
+      "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/7290121/pexels-photo-7290121.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    "rating": 4.8,
+    "totalRating": 1200,
+    "products": 120
+  },
+  {
+    "title": "Tech Haven",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-R0VXb70aEL6PDuG9P_fog3EJiYRgYQw90uWZl6mdmw&s",
+    "images": [
+      "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/7290121/pexels-photo-7290121.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    "rating": 4.7,
+    "totalRating": 950,
+    "products": 20
+  },
+  {
+    "title": "Gadgets Galore",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgiy-dLb5d0Q1tpAfwJ9tWkXzBiTNE2P6ISCHqCGZ-vA&s",
+    "images": [
+      "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/7290121/pexels-photo-7290121.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    "rating": 4.9,
+    "totalRating": 1500,
+    "products": 200
+  },
+  {
+    "title": "Digital Emporium",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcGS5yHNaZ-xVcodtF3x2kzkfTSN3hX_XwqdRe7XvqgQ&s",
+    "images": [
+      "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/7290121/pexels-photo-7290121.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    "rating": 4.8,
+    "totalRating": 1800,
+    "products": 25
+  },
+
+  {
+    "title": "Gizmo Paradise",
+    "avatar": "https://png.pngtree.com/template/20191031/ourmid/pngtree-paradise-logo-illustration-image_325792.jpg",
+    "images": [
+      "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/7290121/pexels-photo-7290121.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    "rating": 4.6,
+    "totalRating": 1000,
+    "products": 10
+  },
+  {
+    "title": "Digital World",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlgmDayIHo9pP5qEthDJIQAMkCL-CjVjkivTpOphKJQ&s",
+    "images": [
+      "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/7290121/pexels-photo-7290121.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    "rating": 4.7,
+    "totalRating": 1350,
+    "products": 120
+  }
+]
