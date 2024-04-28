@@ -5,6 +5,7 @@ import BannerOne from "@/components/promotional/BannerOne";
 import BannerTwo from "@/components/promotional/BannerTwo";
 import DealOfTheDay from "@/components/DealOfTheDay";
 import OnSellingProducts from "@/components/OnSellingProducts";
+import Brand from "@/components/Brand";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <DealOfTheDay />
       <OnSellingProducts />
       <BannerOne />
+      <Brand />
       <BannerTwo />
     </main>
   );
