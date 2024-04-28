@@ -7,15 +7,17 @@
 - [Project Overview](#project-overview)
 - [Key Features](#key-features)
 - [Getting Started](#getting-started)
-
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
-
 - [Contributing](#contributing)
+
+---
 
 ## Introduction
 
 Welcome to the Vortex Vault project repository! Vortex Vault is a modern e-commerce web application developed to provide users with a seamless shopping experience. Built using Next.js and TypeScript, this platform offers a wide range of products, exclusive deals, and engaging user interactions.
+
+---
 
 ## Technologies Used
 
@@ -27,9 +29,13 @@ Welcome to the Vortex Vault project repository! Vortex Vault is a modern e-comme
   - Shadcn UI
   - Swiper.js
 
+---
+
 ## Project Overview
 
 Vortex Vault is designed to offer an immersive and intuitive e-commerce experience. From browsing products to making purchases, users can navigate the platform effortlessly. Here's an overview of its main sections and functionalities:
+
+---
 
 ## Key Features
 
@@ -43,6 +49,8 @@ Vortex Vault is designed to offer an immersive and intuitive e-commerce experien
 - **Top Vendors**: Featuring top vendors or sellers on the platform.
 - **Daily Discover**: Daily recommendations or new arrivals.
 - **Banner Sections**: Engaging banners promoting special offers or events.
+
+---
 
 ## Getting Started
 
