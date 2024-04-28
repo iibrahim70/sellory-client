@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { FiShoppingCart } from "react-icons/fi";
 import { GoGitCompare } from "react-icons/go";
-import { HiMiniViewfinderCircle } from "react-icons/hi2";
+import { GrView } from "react-icons/gr";
 import Rating from "./ui/Rating";
 import productsData from "../../public/products.json";
 import banner from "@/assets/images/banner-2.png";
@@ -47,7 +47,7 @@ const DealOfTheDay = () => {
                     variant="secondary"
                     className="w-full flex items-center gap-3"
                   >
-                    <HiMiniViewfinderCircle className="size-5" />
+                    <GrView className="size-5" />
                     Preview
                   </Button>
 
