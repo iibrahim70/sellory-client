@@ -12,10 +12,10 @@ const DealOfTheDay = () => {
     <section className="section-wrapper py-10 space-y-10">
       <h4>Deal Of The Day</h4>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
         {productsData?.slice(0, 2)?.map((item) => (
           <div key={item?.id} className="flex flex-col gap-5">
-            <div className="bg-white flex items-center gap-5 shadow-md p-5">
+            <div className="bg-white flex flex-col lg:flex-row items-center gap-5 shadow-md p-5">
               <Image
                 src={item?.image}
                 alt={item?.title}
