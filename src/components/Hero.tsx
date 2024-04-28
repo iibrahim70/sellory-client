@@ -41,9 +41,9 @@ const Hero = () => {
   const brandIcons = [iconOne, iconTwo, iconThree, iconFour];
 
   return (
-    <section className="section-wrapper py-5 grid lg:grid-cols-10 gap-5">
+    <section className="section-wrapper py-5 grid grid-cols-1 md:grid-cols-6 xl:grid-cols-10 gap-5">
       {/* Left section with categories sidebar  */}
-      <div className="col-span-2 bg-white shadow-md p-4 space-y-3.5">
+      <div className="max-md:hidden md:col-span-2 bg-white shadow-md p-4 space-y-3.5">
         {categories?.map((category, index) => (
           <div key={index} className="flex items-center gap-1">
             <Image src={awardIcon} alt="Award Icon" />
@@ -53,7 +53,7 @@ const Hero = () => {
       </div>
 
       {/* Middle section with image slider and brand icons */}
-      <div className="col-span-5 space-y-5">
+      <div className="md:col-span-4 xl:col-span-5 space-y-5">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -78,7 +78,7 @@ const Hero = () => {
           ))}
         </Swiper>
 
-        <div className="bg-white flex items-center justify-between gap-5 shadow-md p-5 h-[30%]">
+        <div className="bg-white flex items-center justify-between overflow-hidden gap-5 shadow-md p-5 h-[30%]">
           {brandIcons?.map((icon, index) => (
             <div key={index} className="flex flex-col items-center gap-3">
               <Image src={icon} alt="Brand Icon" className="size-[60px]" />
@@ -89,11 +89,11 @@ const Hero = () => {
       </div>
 
       {/* Right section with personal greeting and flash sale offer */}
-      <div className="col-span-3 bg-white shadow-md p-5 space-y-4">
+      <div className="max-xl:hidden xl:col-span-3 bg-white shadow-md p-5 space-y-4">
         <p>Good Afternoon, John Smith</p>
 
         <div className="flex flex-col items-center justify-center space-y-4">
-          <p className="text-lg font-bold">Flash Sale for You!</p>
+          <p className="text-xl font-bold">Flash Sale for You!</p>
           <p className="text-primary">
             <span className="text-4xl font-bold">40</span>
             <sub>% off</sub>

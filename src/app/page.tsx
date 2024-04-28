@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import Promotional from "@/components/promotional/Promotional";
+import PromotionalMessage from "@/components/promotional/PromotionalMessage";
 import ShopByCategory from "@/components/ShopByCategory";
 import BannerOne from "@/components/promotional/BannerOne";
 import BannerTwo from "@/components/promotional/BannerTwo";
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main>
       <Hero />
-      <Promotional />
+      <PromotionalMessage />
       <ShopByCategory />
       <DealOfTheDay />
       <OnSellingProducts />

@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
         {/* middle */}
-        <div className="w-2/5 relative flex items-center justify-center text-black cursor-pointer">
+        <div className="max-md:hidden md:w-2/5 relative flex items-center justify-center text-black cursor-pointer">
           <input
             type="text"
             name="search"
