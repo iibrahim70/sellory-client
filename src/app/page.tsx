@@ -8,7 +8,7 @@ import OnSellingProducts from "@/components/OnSellingProducts";
 import Brand from "@/components/Brand";
 import TopVendors from "@/components/TopVendors";
 import DailyDiscover from "@/components/DailyDiscover";
-import MostViewdItems from "@/components/MostViewdItems";
+import MostViewedItems from "@/components/MostViewedItems";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
       <OnSellingProducts />
       <BannerOne />
       <Brand />
-      <MostViewdItems />
+      <MostViewedItems />
       <TopVendors />
       <BannerTwo />
       <DailyDiscover />

@@ -7,7 +7,7 @@ const TopVendors = () => {
     <section className="section-wrapper py-10 space-y-10">
       <h4>Weekly Top Vendors</h4>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
         {vendorsData?.map((item) => (
           <div key={item?.title} className="bg-white shadow-md p-5 space-y-5">
             <div className="flex items-center gap-5">

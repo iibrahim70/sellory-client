@@ -16,7 +16,7 @@ import americanExpressIcon from "../../assets/icons/american-express.png";
 const Footer = () => {
   return (
     <footer>
-      <div className="section-wrapper py-10 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
+      <div className="section-wrapper py-10 flex flex-wrap flex-col md:flex-row justify-between gap-10 lg:gap-20">
         <div className="space-y-5">
           <h1 className="text-2xl text-primary">Vortex Vault</h1>
           <p>Got Question? Call us 24/7</p>
@@ -31,7 +31,7 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between gap-10">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="space-y-5">
             <h6>Company</h6>
 
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center space-y-5">
+        <div className="flex flex-col lg:items-center space-y-5">
           <h6>Download App</h6>
 
           <div className="flex items-center gap-5">
@@ -91,7 +91,7 @@ const Footer = () => {
           <p>All Rights Reserved. © 2024 Ibrahim Khalil</p>
 
           <div className="flex items-center gap-3">
-            <p>Payment Methods</p>
+            <p>Payment Method</p>
             <Image src={visaIcon} alt="Visa Icon" />
             <Image src={mastercardIcon} alt="Mastercard Icon" />
             <Image src={paypalIcon} alt="Paypal Icon" />

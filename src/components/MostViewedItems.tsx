@@ -10,7 +10,7 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 
-const MostViewdItems = () => {
+const MostViewedItems = () => {
   // Shuffling the array
   const shuffledArray = shuffleArray(productsData);
 
@@ -62,4 +62,4 @@ const MostViewdItems = () => {
   );
 };
 
-export default MostViewdItems;
+export default MostViewedItems;
