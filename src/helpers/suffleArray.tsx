@@ -1,4 +1,4 @@
-interface suffleArrayProps {
+export interface suffleArrayProps {
   id: number;
   title: string;
   description: string;

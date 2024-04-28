@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vortex Vault - Frontend
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Technologies Used](#technologies-used)
+3. [Project Overview](#project-overview)
+4. [Key Features](#key-features)
+5. [Getting Started](#getting-started)
+   - [Installation](#installation)
+   - [Running the Application](#running-the-application)
+
+## Introduction
+
+Welcome to the Vortex Vault project repository! Vortex Vault is a modern e-commerce web application developed to provide users with a seamless shopping experience. Built using Next.js and TypeScript, this platform offers a wide range of products, exclusive deals, and engaging user interactions.
+
+## Technologies Used
+
+- **Frontend:**
+
+  - Next.js
+  - Typescript
+  - Tailwind CSS
+  - Shadcn UI
+  - Swiper.js
+
+## Project Overview
+
+Vortex Vault is designed to offer an immersive and intuitive e-commerce experience. From browsing products to making purchases, users can navigate the platform effortlessly. Here's an overview of its main sections and functionalities:
+
+## Key Features
+
+- **Hero Section**: Attractive hero section showcasing featured products or promotions.
+- **Promotional Message**: Highlighting special offers or announcements.
+- **Shop By Category**: Easy navigation through product categories.
+- **Deal Of The Day**: Daily deals section offering discounted products.
+- **On Selling Products**: Displaying products currently on sale.
+- **Brand Section**: Showcasing popular brands available on the platform.
+- **Most Viewed Items**: Highlighting the most viewed products.
+- **Top Vendors**: Featuring top vendors or sellers on the platform.
+- **Daily Discover**: Daily recommendations or new arrivals.
+- **Banner Sections**: Engaging banners promoting special offers or events.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/iibrahim70/vortex-vault-front.git`
+2. Navigate to the project directory: `cd vortex-vault-front`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Install dependencies: `pnpm i`
+2. Run the development server: `pnpm dev`
+3. Open http://localhost:3000 in your browser to view the application.
