@@ -14,8 +14,9 @@ const TopVendors = () => {
               <Image
                 src={item?.avatar}
                 alt={item?.title}
-                width={100}
-                height={100}
+                width={500}
+                height={500}
+                className="size-24 object-cover"
               />
 
               <div className="space-y-1">

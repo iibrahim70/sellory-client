@@ -17,7 +17,7 @@ const OnSellingProducts = () => {
               alt={item?.title}
               width={500}
               height={500}
-              className="size-40 h-full object-cover"
+              className="size-36 h-full object-cover"
             />
 
             <div className="space-y-3 py-5 pr-5">

@@ -59,9 +59,9 @@ const Brand = () => {
             <Image
               src={item?.image}
               alt={item?.title}
-              width={100}
-              height={100}
-              className="object-cover"
+              width={500}
+              height={500}
+              className="size-24 object-cover"
             />
             <p className="line-clamp-2">{item.title}</p>
           </div>

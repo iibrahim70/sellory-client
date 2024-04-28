@@ -19,8 +19,9 @@ const DealOfTheDay = () => {
               <Image
                 src={item?.image}
                 alt={item?.title}
-                width={200}
-                height={200}
+                width={500}
+                height={500}
+                className="size-44 object-cover"
               />
 
               <div className="space-y-3">
