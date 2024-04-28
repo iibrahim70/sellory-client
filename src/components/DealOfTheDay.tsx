@@ -5,7 +5,7 @@ import { GoGitCompare } from "react-icons/go";
 import { GrView } from "react-icons/gr";
 import productsData from "../../public/products.json";
 import banner from "@/assets/images/banner-2.png";
-import Rating from "./ui/rating";
+import Rating from "./ui/Rating";
 
 const DealOfTheDay = () => {
   return (

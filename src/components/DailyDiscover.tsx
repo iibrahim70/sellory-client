@@ -1,6 +1,6 @@
 import Image from "next/image";
 import productsData from "../../public/products.json";
-import Rating from "./ui/rating";
+import Rating from "./ui/Rating";
 import { FaArrowRight } from "react-icons/fa";
 
 const DailyDiscover = () => {

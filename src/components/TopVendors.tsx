@@ -1,6 +1,6 @@
 import Image from "next/image";
 import vendorsData from "../../public/vendors.json";
-import Rating from "./ui/rating";
+import Rating from "./ui/Rating";
 
 const TopVendors = () => {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import shuffleArray from "@/helpers/suffleArray";
 import productsData from "../../public/products.json";
-import Rating from "./ui/rating";
+import Rating from "./ui/Rating";
 import {
   CarouselNext,
   Carousel,
