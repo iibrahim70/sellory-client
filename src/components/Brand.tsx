@@ -17,7 +17,7 @@ const Brand = () => {
     {
       title: "Apple iPad Pro (12.9-inch, M1, 2021)",
       image:
-        "https://vibegaming.com.bd/wp-content/uploads/2022/06/Apple-iPad-Pro-2021-M1-Chip-12.9-inch-Retina-XDR-Display-Wi-Fi-128GB-Space-Gray-MHNF3.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQqc0dOxt_pH7Rh9AkQnzD93FSi0KGzaDr-8UJrv51w&s",
     },
     {
       title: "Apple Watch Series 8",

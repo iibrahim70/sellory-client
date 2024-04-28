@@ -7,7 +7,7 @@ const OnSellingProducts = () => {
       <h4>On Selling Products</h4>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-        {productsData?.slice(2, 12)?.map((item, index) => (
+        {productsData?.slice(2, 11)?.map((item, index) => (
           <div
             key={index}
             className="bg-white flex items-center gap-5 shadow-md"
