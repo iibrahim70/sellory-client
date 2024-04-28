@@ -105,10 +105,10 @@ const Hero = () => {
 
           <Image
             src="https://dvf83rt16ac4w.cloudfront.net/upload/product/20211110_1636549088_550946.png"
-            width={235}
-            height={300}
+            width={500}
+            height={500}
             alt="Product Image"
-            className="object-cover"
+            className="size-60 object-cover"
           />
 
           <Button className="w-full flex items-center gap-3">
