@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { FiShoppingCart } from "react-icons/fi";
 import { GoGitCompare } from "react-icons/go";
 import { GrView } from "react-icons/gr";
-import Rating from "./ui/Rating";
+import Rating from "./ui/rating";
 import productsData from "../../public/products.json";
 import banner from "@/assets/images/banner-2.png";
 
