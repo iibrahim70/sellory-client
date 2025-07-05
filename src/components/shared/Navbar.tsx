@@ -1,62 +1,86 @@
-import { FiShoppingCart } from "react-icons/fi";
-import { FaUser } from "react-icons/fa";
-import { IoMdSearch } from "react-icons/io";
+import { Search, ShoppingCart, User, ChevronDown, Globe } from "lucide-react";
+import Link from "next/link";
+import { Button, buttonVariants } from "../ui/button";
+import { Input } from "../ui/input";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
-    <nav>
-      <div className="bg-primary text-white">
-        <div className="section-wrapper flex items-center justify-between gap-10 py-4">
-          {/* left side */}
-          <div>
-            <h1 className="text-2xl">Vortex Vault</h1>
-          </div>
-
-          {/* middle */}
-          <div className="max-md:hidden md:w-2/5 relative flex items-center justify-center text-black cursor-pointer">
-            <input
-              type="text"
-              name="search"
-              placeholder="Search by Product Name"
-              className="px-6 py-2 rounded-full outline-none w-full"
-            />
-            <IoMdSearch className="absolute right-10 size-7" />
-          </div>
-
-          {/* right side */}
-          <div className="flex items-center justify-between gap-5">
-            <div className="flex items-center gap-1.5">
-              <p>Signin</p>
-              <FaUser />
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="container mx-auto ">
+        <div className="hidden md:flex justify-between items-center py-2.5 border-b text-xs">
+          <div className="flex items-center gap-5">
+            <div className="flex items-center gap-1 cursor-pointer">
+              <Globe className="size-4" />
+              <span>BD (EN)</span>
+              <ChevronDown className="size-5" />
             </div>
 
-            <div className="flex items-center gap-1.5">
-              <p>Cart</p>
-              <FiShoppingCart />
-            </div>
+            <span>support@sellory.com</span>
+          </div>
+
+          <div className="flex items-center gap-5">
+            <Link href="/" className="hover:text-blue-500">
+              FAQ
+            </Link>
+
+            <Link href="/" className="hover:text-blue-500">
+              Contact
+            </Link>
+
+            <Link
+              href="/"
+              className={buttonVariants({
+                variant: "outline",
+                size: "sm",
+                className:
+                  "hover:bg-blue-600 hover:text-white transition-colors duration-300",
+              })}
+            >
+              Become a Seller
+            </Link>
           </div>
         </div>
-      </div>
 
-      <div className="bg-white">
-        <div className="section-wrapper py-2 flex flex-wrap items-center justify-between gap-3.5">
-          <p>Home</p>
-          <p>Products</p>
-          <p>Categories</p>
-          <p>Brands</p>
-          <p>Deals</p>
-          <p>Services</p>
-          <p>Cart</p>
-          <p>Returns</p>
-          <p>Terms</p>
-          <p>Privacy Policy</p>
-          <p>FAQ</p>
-          <p>About</p>
-          <p>Contact</p>
+        <div className="flex items-center justify-between py-2.5">
+          <Link href="/" className="font-bold text-lg md:text-2xl">
+            Sellory
+          </Link>
+
+          <div className="hidden lg:flex w-full max-w-xl">
+            <div className="relative w-full">
+              <Input
+                type="text"
+                placeholder="Search for products, brands and more"
+              />
+
+              <Button className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-l-none rounded-r-md w-14">
+                <Search className="size-5" />
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4 md:gap-6">
+            <Link
+              href="/"
+              className="hidden md:inline-flex items-center gap-1.5"
+            >
+              <User className="size-5" />
+              <span className="text-sm font-medium">Account</span>
+            </Link>
+
+            <Link href="/" className="relative flex items-center gap-1.5">
+              <ShoppingCart className="size-5" />
+              <span className="hidden md:inline-flex items-center text-sm font-medium">
+                Cart
+              </span>
+
+              <span className="absolute -top-3.5 right-[17px] flex size-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">
+                3
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
   );
 };
-
-export default Navbar;
