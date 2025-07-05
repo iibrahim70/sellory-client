@@ -1,17 +1,17 @@
 import Image from "next/image";
-import productsData from "../../public/products.json";
+import productsData from "@/assets/data/products.json";
 import Rating from "./ui/Rating";
-import { FaArrowRight } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
 
 const DailyDiscover = () => {
   return (
-    <section className="section-wrapper py-10 space-y-10">
+    <section className="container py-10 space-y-10">
       <div className="flex items-center justify-between gap-5">
         <h4>Daily Discover</h4>
 
         <button className="flex items-center gap-2">
           <p className="font-semibold">See More</p>
-          <FaArrowRight />
+          <ArrowRight />
         </button>
       </div>
 

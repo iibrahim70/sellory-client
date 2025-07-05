@@ -1,6 +1,5 @@
 import Image from "next/image";
-import shuffleArray from "@/helpers/suffleArray";
-import productsData from "../../public/products.json";
+import productsData from "@/assets/data/products.json";
 import Rating from "./ui/Rating";
 import {
   CarouselNext,
@@ -12,7 +11,7 @@ import {
 
 const MostViewedItems = () => {
   return (
-    <section className="section-wrapper py-10 space-y-10">
+    <section className="container py-10 space-y-10">
       <h4>Most Viewd Items</h4>
 
       <Carousel className="w-full">

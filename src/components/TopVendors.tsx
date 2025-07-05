@@ -1,10 +1,10 @@
 import Image from "next/image";
-import vendorsData from "../../public/vendors.json";
+import vendorsData from "@/assets/data/vendors.json";
 import Rating from "./ui/Rating";
 
 const TopVendors = () => {
   return (
-    <section className="section-wrapper py-10 space-y-10">
+    <section className="container py-10 space-y-10">
       <h4>Weekly Top Vendors</h4>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">

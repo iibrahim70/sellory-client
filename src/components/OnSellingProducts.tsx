@@ -1,9 +1,9 @@
 import Image from "next/image";
-import productsData from "../../public/products.json";
+import productsData from "@/assets/data/products.json";
 
 const OnSellingProducts = () => {
   return (
-    <section className="section-wrapper py-10 space-y-10">
+    <section className="container py-10 space-y-10">
       <h4>On Selling Products</h4>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">

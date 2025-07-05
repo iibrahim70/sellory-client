@@ -1,6 +1,6 @@
 import Image from "next/image";
 import brandIcon from "@/assets/icons/brand-3.png";
-import { FaArrowRight } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
 
 const Brand = () => {
   const products = [
@@ -37,7 +37,7 @@ const Brand = () => {
   ];
 
   return (
-    <section className="section-wrapper py-10 space-y-10">
+    <section className="container py-10 space-y-10">
       <div className="flex items-center justify-between gap-5">
         <div className="flex items-center">
           <Image src={brandIcon} alt="Brand Icon" />
@@ -46,7 +46,7 @@ const Brand = () => {
 
         <button className="flex items-center gap-2">
           <p className="font-semibold">See More</p>
-          <FaArrowRight />
+          <ArrowRight />
         </button>
       </div>
 

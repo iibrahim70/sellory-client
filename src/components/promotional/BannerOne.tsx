@@ -4,7 +4,7 @@ import bannerTwo from "@/assets/images/banner-4.png";
 
 const BannerOne = () => {
   return (
-    <section className="section-wrapper py-10 grid grid-cols-7 gap-5">
+    <section className="container py-10 grid grid-cols-7 gap-5">
       <div className="col-span-2 space-y-5">
         <Image src={bannerOne} alt="Banner Image" />
         <Image src={bannerOne} alt="Banner Image" />
