@@ -1,5 +1,4 @@
 import Image from "next/image";
-import shuffleArray from "@/helpers/suffleArray";
 import productsData from "@/assets/data/products.json";
 import Rating from "./ui/Rating";
 import {

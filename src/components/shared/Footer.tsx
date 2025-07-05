@@ -1,15 +1,4 @@
 import React, { ReactNode } from "react";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-  MapPin,
-  Mail,
-  Phone,
-} from "lucide-react";
-import { buttonVariants } from "../ui/button";
-import { HeartHandshake } from "lucide-react";
 import Link from "next/link";
 
 const FooterLink = ({
