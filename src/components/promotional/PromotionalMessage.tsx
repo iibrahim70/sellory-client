@@ -20,19 +20,8 @@ const PromotionalMessage = () => {
   ];
 
   return (
-    <section className="section-wrapper grid md:grid-cols-2 xl:grid-cols-4 gap-5 pb-10">
-      {promotionalMessages?.map((item) => (
-        <div
-          key={item?.title}
-          className="bg-[#F7F8F8] flex items-center gap-2 shadow-md p-3.5"
-        >
-          <Image src={checkmarkIcon} alt="Checkmark Icon" />
-          <div>
-            <p className="font-bold text-sm">{item?.title}</p>
-            <p className="line-clamp-1">{item?.subTitle}</p>
-          </div>
-        </div>
-      ))}
+    <section className="container grid md:grid-cols-2 xl:grid-cols-4 gap-5 pb-10">
+      
     </section>
   );
 };

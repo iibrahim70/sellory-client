@@ -1,15 +1,13 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { FiShoppingCart } from "react-icons/fi";
-import { GoGitCompare } from "react-icons/go";
-import { GrView } from "react-icons/gr";
-import productsData from "../../public/products.json";
+import productsData from "@/assets/data/products.json";
 import banner from "@/assets/images/banner-2.png";
 import Rating from "./ui/Rating";
+import { ShoppingCart, View } from "lucide-react";
 
 const DealOfTheDay = () => {
   return (
-    <section className="section-wrapper py-10 space-y-10">
+    <section className="container py-10 space-y-10">
       <h4>Deal Of The Day</h4>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
@@ -48,21 +46,13 @@ const DealOfTheDay = () => {
                     variant="secondary"
                     className="w-full flex items-center gap-3"
                   >
-                    <GrView className="size-5" />
+                    <View className="size-5" />
                     Preview
-                  </Button>
-
-                  <Button
-                    variant="secondary"
-                    className="w-full flex items-center gap-3"
-                  >
-                    <GoGitCompare className="size-5" />
-                    Compare
                   </Button>
                 </div>
 
                 <Button className="w-full flex items-center gap-3">
-                  <FiShoppingCart className="size-5" />
+                  <ShoppingCart className="size-5" />
                   Add To Cart
                 </Button>
               </div>

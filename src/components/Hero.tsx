@@ -6,7 +6,7 @@ import { userHighlights } from "@/assets/data/user-highlights";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto py-10 space-y-5">
+    <section className="container py-10 space-y-5">
       <div className="grid grid-cols-1 lg:grid-cols-9 gap-5">
         <div className="max-lg:hidden lg:col-span-2 rounded-md border shadow p-3.5">
           <ul className="space-y-1.5">
@@ -36,7 +36,7 @@ const Hero = () => {
         {userHighlights?.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-3.5 rounded-lg shadow hover:shadow-md border transition-shadow duration-300 space-y-0.5"
+            className="flex flex-col items-center text-center p-3.5 rounded-lg shadow border space-y-0.5"
           >
             <item.icon className="size-8 text-primary mb-2.5" />
 

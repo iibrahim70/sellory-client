@@ -1,106 +1,106 @@
-import Image from "next/image";
-import { FaArrowDown } from "react-icons/fa6";
-import appStoreIcon from "@/assets/icons/app-store.png";
-import playStoreIcon from "@/assets/icons/play-store.png";
+import React, { ReactNode } from "react";
 import {
-  FaFacebook,
-  FaLinkedinIn,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
-import paypalIcon from "../../assets/icons/paypal.png";
-import mastercardIcon from "../../assets/icons/mastercard.png";
-import visaIcon from "../../assets/icons/visa.png";
-import americanExpressIcon from "../../assets/icons/american-express.png";
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+  MapPin,
+  Mail,
+  Phone,
+} from "lucide-react";
+import { buttonVariants } from "../ui/button";
+import { HeartHandshake } from "lucide-react";
+import Link from "next/link";
 
-const Footer = () => {
+const FooterLink = ({
+  children,
+  href,
+}: {
+  children: ReactNode;
+  href: string;
+}) => (
+  <Link
+    href={href}
+    className="text-muted-foreground hover:text-white hover:underline hover:underline-offset-2 transition-colors duration-300 text-sm"
+  >
+    {children}
+  </Link>
+);
+
+export const Footer = () => {
   return (
-    <footer>
-      <div className="section-wrapper py-10 flex flex-wrap flex-col md:flex-row justify-between gap-10 lg:gap-20">
-        <div className="space-y-5">
-          <h1 className="text-2xl text-primary">Vortex Vault</h1>
-          <p>Got Question? Call us 24/7</p>
-          <p className="font-semibold">(+880) 123456789</p>
+    <footer className="bg-black/95 text-white">
+      <div className="container flex flex-col lg:flex-row gap-10 lg:gap-20 py-10 lg:pt-20 lg:pb-10">
+        <div className="lg:w-1/3 space-y-3.5">
+          <h4>
+            <span className="text-purple-600">Sel</span>lory
+          </h4>
+
           <p>
-            Register now & get you 10% <br /> offer from first order!
+            The leading multi-vendor marketplace in Bangladesh, connecting
+            buyers and sellers with ease.
           </p>
-
-          <button className="bg-white shadow p-2 w-fit flex items-center gap-2">
-            <p>English (USA)</p>
-            <FaArrowDown />
-          </button>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between gap-10">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-10">
           <div className="space-y-5">
-            <h6>Company</h6>
+            <h6 className="text-white/85">About Sellory</h6>
 
-            <div className="space-y-2">
-              <p>About Us</p>
-              <p>Career</p>
-              <p>Contact Us</p>
-              <p>Start Selling</p>
-              <p>Order History</p>
+            <div className="flex flex-col gap-2">
+              <FooterLink href="/">About Us</FooterLink>
+              <FooterLink href="/">Careers</FooterLink>
+              <FooterLink href="/">Press</FooterLink>
+              <FooterLink href="/">Terms of Service</FooterLink>
             </div>
           </div>
 
           <div className="space-y-5">
-            <h6>My Account</h6>
+            <h6 className="text-white/85">Customer Service</h6>
 
-            <div className="space-y-2">
-              <p>Track My Order</p>
-              <p>View Cart</p>
-              <p>Sign In</p>
-              <p>Help</p>
-              <p>Wishlist</p>
+            <div className="flex flex-col gap-2">
+              <FooterLink href="/">Help Center</FooterLink>
+              <FooterLink href="/">Returns & Refunds</FooterLink>
+              <FooterLink href="/">Shipping Information</FooterLink>
+              <FooterLink href="/">Track Your Order</FooterLink>
             </div>
           </div>
 
           <div className="space-y-5">
-            <h6>Customer Service</h6>
+            <h6 className="text-white/85">For Vendors</h6>
 
-            <div className="space-y-2">
-              <p>Payment Methods</p>
-              <p>Money Return Policy</p>
-              <p>Product Return</p>
-              <p>Contact Seller</p>
-              <p>Terms & Conditions</p>
+            <div className="flex flex-col gap-2">
+              <FooterLink href="/">Sell on Sellory</FooterLink>
+              <FooterLink href="/">Vendor Login</FooterLink>
+              <FooterLink href="/">Seller Protection</FooterLink>
+              <FooterLink href="/">Seller Handbook</FooterLink>
             </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:items-center space-y-5">
-          <h6>Download App</h6>
-
-          <div className="flex items-center gap-5">
-            <Image src={playStoreIcon} alt="Play Store Icon" />
-            <Image src={appStoreIcon} alt="App Store Icon" />
-          </div>
-
-          <div className="flex items-center gap-5">
-            <FaFacebook className="size-6" />
-            <FaInstagram className="size-6" />
-            <FaLinkedinIn className="size-6" />
-            <FaTwitter className="size-6" />
           </div>
         </div>
       </div>
 
-      <div className="bg-[#DDDFDF] py-5">
-        <div className="section-wrapper flex flex-wrap items-center justify-between gap-5 lg:gap-10">
-          <p>All Rights Reserved. © 2024 Ibrahim Khalil</p>
+      {/* botton section */}
+      <div className="bg-black/90">
+        <div className="container flex flex-wrap items-center justify-between gap-5 py-5">
+          <p>
+            © {new Date().getFullYear()} Sellory Inc. All Rights Reserved.
+            Design & Developed by {""}
+            <a
+              target="_blank"
+              href="https://iibrahim-dev.vercel.app/"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-semibold hover:underline underline-offset-2"
+            >
+              Ibrahim Khalil
+            </a>
+          </p>
 
-          <div className="flex items-center gap-3">
-            <p>Payment Method</p>
-            <Image src={visaIcon} alt="Visa Icon" />
-            <Image src={mastercardIcon} alt="Mastercard Icon" />
-            <Image src={paypalIcon} alt="Paypal Icon" />
-            <Image src={americanExpressIcon} alt="American Express Icon" />
+          <div className="flex items-center gap-3.5">
+            <p>Privacy Policy</p>
+            <p>|</p>
+            <p>Terms of Use</p>
           </div>
         </div>
       </div>
     </footer>
   );
 };
-
-export default Footer;

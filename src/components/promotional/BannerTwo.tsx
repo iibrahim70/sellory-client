@@ -16,7 +16,7 @@ const BannerTwo = () => {
   ];
 
   return (
-    <section className="section-wrapper py-10 grid grid-cols-2 lg:grid-cols-3 gap-5">
+    <section className="container py-10 grid grid-cols-2 lg:grid-cols-3 gap-5">
       {bannerImages?.map((item, index) => (
         <Image
           key={index}
