@@ -6,8 +6,8 @@ import { userHighlights } from "@/assets/data/user-highlights";
 
 const Hero = () => {
   return (
-    <section className="container py-10 space-y-5">
-      <div className="grid grid-cols-1 lg:grid-cols-9 gap-5">
+    <section className="container pt-5 space-y-5">
+      <div className="grid lg:grid-cols-9 gap-5">
         <div className="max-lg:hidden lg:col-span-2 rounded-md border shadow p-3.5">
           <ul className="space-y-1.5">
             {categories?.map((item, index) => (
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {userHighlights?.map((item, index) => (
           <div
             key={index}
