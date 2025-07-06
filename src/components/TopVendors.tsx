@@ -3,7 +3,7 @@ import { VendorCard } from "./cards";
 
 const TopVendors = () => {
   return (
-    <section className="container py-10 space-y-10">
+    <section className="container pt-10 lg:pt-20 space-y-5 lg:space-y-10">
       <h4>Weekly Top Vendors</h4>
 
       <VendorCard data={data} />
