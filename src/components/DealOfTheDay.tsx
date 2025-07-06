@@ -6,7 +6,11 @@ const DealOfTheDay = () => {
     <section className="container pt-10 lg:pt-20 space-y-5 lg:space-y-10">
       <h4>Deal Of The Day</h4>
 
-      <DealOfTheDayCard data={data} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {data?.slice(0, 8)?.map((item) => (
+          <DealOfTheDayCard item={item} key={item?.id} />
+        ))}
+      </div>
     </section>
   );
 };

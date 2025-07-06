@@ -10,7 +10,11 @@ const FlashSale = () => {
         <h4>Flash Sale</h4>
       </div>
 
-      <FlashSaleCard data={data} />
+      <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        {data?.slice(0, 8)?.map((item) => (
+          <FlashSaleCard item={item} key={item?.id} />
+        ))}
+      </div>
     </section>
   );
 };

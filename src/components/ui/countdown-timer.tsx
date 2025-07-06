@@ -3,7 +3,17 @@
 import { Clock } from "lucide-react";
 import Countdown from "react-countdown";
 
-const renderer = ({ days, hours, minutes, seconds }) => {
+const renderer = ({
+  days,
+  hours,
+  minutes,
+  seconds,
+}: {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}) => {
   return (
     <div className="flex items-center justify-center gap-2.5 bg-gray-100 p-2 rounded-md border text-sm  text-red-500">
       <Clock className="size-4" />
