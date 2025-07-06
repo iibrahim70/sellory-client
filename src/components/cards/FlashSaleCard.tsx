@@ -1,4 +1,4 @@
-import { Eye } from "lucide-react";
+import { CreditCard, Eye, Wallet } from "lucide-react";
 import { BlurredImage } from "../shared";
 import { Badge, Button, CountdownTimer } from "../ui";
 
@@ -17,7 +17,7 @@ export const FlashSaleCard = ({ data }) => {
               className="w-full h-[200px] object-cover"
             />
 
-            <Badge className="absolute top-2 left-2" variant="destructive">
+            <Badge className="absolute top-2 right-2" variant="destructive">
               {Math.round(
                 ((item?.price - item?.discountPrice) / item?.price) * 100
               )}
@@ -43,7 +43,10 @@ export const FlashSaleCard = ({ data }) => {
               <CountdownTimer targetDate={item?.endTime} />
 
               <div className="flex items-center justify-between">
-                <Button className="w-[60%]">Buy Now</Button>
+                <Button className="w-[60%]">
+                  <CreditCard />
+                  <span>Buy Now</span>
+                </Button>
 
                 <Button variant="outline" className="w-[35%]">
                   <Eye />

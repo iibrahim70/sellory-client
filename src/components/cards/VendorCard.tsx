@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { BlurredImage } from "../shared";
-import { Button, buttonVariants, Rating } from "../ui";
+import { Button } from "../ui";
 import { IVendor } from "@/types/vendors";
+import { Star } from "lucide-react";
 
 export const VendorCard = ({ data }: { data: IVendor[] }) => {
   return (
@@ -24,18 +25,30 @@ export const VendorCard = ({ data }: { data: IVendor[] }) => {
                 <h6 className="whitespace-nowrap">{item?.name}</h6>
 
                 <div className="flex items-center gap-2.5">
-                  <p className="font-semibold">Products ({item?.products})</p>
-                  <Rating
-                    rating={item?.rating}
-                    totalRatings={item?.totalRating}
-                  />
+                  <p className="font-semibold">
+                    <span className="text-black">Products</span> (
+                    {item?.products})
+                  </p>
+
+                  <div className="flex items-center gap-1">
+                    <Star
+                      className="size-5 text-yellow-500"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+
+                    <div className="flex items-center gap-1 text-sm">
+                      <span className="font-semibold">{item?.rating}</span>
+                      <span className="text-muted-foreground">
+                        ({item?.totalRating})
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <Link href="/" className={buttonVariants({ size: "sm" })}>
-              Visit Store
-            </Link>
+            <Button size="sm">Visit Store</Button>
           </div>
 
           <div className="grid grid-cols-2 gap-2">
