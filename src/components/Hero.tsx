@@ -6,9 +6,9 @@ import { userHighlights } from "@/assets/data/user-highlights";
 
 const Hero = () => {
   return (
-    <section className="container py-10 space-y-5">
-      <div className="grid grid-cols-1 lg:grid-cols-9 gap-5">
-        <div className="max-lg:hidden lg:col-span-2 rounded-md border shadow p-3.5">
+    <section className="container pt-5 space-y-5">
+      <div className="grid lg:grid-cols-9 gap-5">
+        <div className="max-lg:hidden lg:col-span-2 rounded border shadow p-3.5">
           <ul className="space-y-1.5">
             {categories?.map((item, index) => (
               <li key={index}>
@@ -27,16 +27,16 @@ const Hero = () => {
           </ul>
         </div>
 
-        <div className="lg:col-span-7 rounded-lg overflow-hidden shadow-lg">
+        <div className="lg:col-span-7 rounded overflow-hidden shadow-lg">
           <HeroSlider />
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
         {userHighlights?.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-3.5 rounded-lg shadow border space-y-0.5"
+            className="flex flex-col items-center text-center p-3.5 rounded shadow border space-y-0.5"
           >
             <item.icon className="size-8 text-primary mb-2.5" />
 

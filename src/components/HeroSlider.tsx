@@ -15,7 +15,7 @@ const HeroSlider = () => {
       autoplay={{ delay: 3000, disableOnInteraction: false }}
       pagination={{ clickable: true }}
       modules={[Pagination, Autoplay]}
-      className="h-full"
+      className="max-lg:h-[300px] lg:h-full w-full"
     >
       {data?.map((item, index) => (
         <SwiperSlide key={index}>

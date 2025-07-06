@@ -1,3 +1,4 @@
+import { CLOUDINARY_BASE_URL } from "@/constants";
 import {
   Monitor,
   Shirt,
@@ -20,61 +21,91 @@ export const categories = [
   {
     name: "Electronics",
     icon: Monitor,
+    image: `${CLOUDINARY_BASE_URL}/v1751771169/devices_9370958_s7m6qv.png`,
+    slug: "electronics",
   },
   {
     name: "Fashion & Apparel",
     icon: Shirt,
+    image: `${CLOUDINARY_BASE_URL}/dress_6463934_pvtibf.png`,
+    slug: "electronics",
   },
   {
     name: "Home & Living",
     icon: Sofa,
+    image: `${CLOUDINARY_BASE_URL}/favorite_6831936_gkmdnp.png`,
+    slug: "electronics",
   },
   {
     name: "Health & Beauty",
     icon: HeartPulse,
+    image: `${CLOUDINARY_BASE_URL}/body-wash_13328342_dals3q.png`,
+    slug: "electronics",
   },
   {
     name: "Sports & Outdoors",
     icon: Dumbbell,
+    image: `${CLOUDINARY_BASE_URL}/sports_1754496_fxeoph.png`,
+    slug: "electronics",
   },
   {
     name: "Toys & Baby Products",
     icon: Baby,
+    image: `${CLOUDINARY_BASE_URL}/toys_1607056_uhdm2n.png`,
+    slug: "electronics",
   },
   {
     name: "Automotive & Vehicles",
     icon: Car,
+    image: `${CLOUDINARY_BASE_URL}/vehicles_5044923_ftqdpx.png`,
+    slug: "electronics",
   },
   {
     name: "Books, Music & Media",
     icon: BookOpen,
+    image: `${CLOUDINARY_BASE_URL}/audiobook_14207547_hwzlqn.png`,
+    slug: "electronics",
   },
   {
     name: "Grocery & Food",
     icon: ShoppingBasket,
+    image: `${CLOUDINARY_BASE_URL}/groceries_995874_ep88kv.png`,
+    slug: "electronics",
   },
   {
     name: "Office & Stationery",
     icon: PenTool,
+    image: `${CLOUDINARY_BASE_URL}/pencil-case_4674638_omwqu2.png`,
+    slug: "electronics",
   },
   {
     name: "Tools & Hardware",
     icon: Hammer,
+    image: `${CLOUDINARY_BASE_URL}/tools_6919116_s9ewr1.png`,
+    slug: "electronics",
   },
   {
     name: "Jewelry & Accessories",
     icon: Gem,
+    image: `${CLOUDINARY_BASE_URL}/jewelry_17566323_ks2zwy.png`,
+    slug: "electronics",
   },
   {
     name: "Art & Collectibles",
     icon: Palette,
+    image: `${CLOUDINARY_BASE_URL}/ceramics_12836093_xz3mmq.png`,
+    slug: "electronics",
   },
   {
     name: "Software & Digital Goods",
     icon: Code2,
+    image: `${CLOUDINARY_BASE_URL}/product_8932308_tkjpvj.png`,
+    slug: "electronics",
   },
   {
     name: "Pet Supplies",
     icon: Dog,
+    image: `${CLOUDINARY_BASE_URL}/first-aid-kit_5100075_hlccml.png`,
+    slug: "electronics",
   },
 ];

@@ -2,9 +2,9 @@ import Image from "next/image";
 import bannerOne from "@/assets/images/banner-3.png";
 import bannerTwo from "@/assets/images/banner-4.png";
 
-const BannerOne = () => {
+const PromotionalBanner = () => {
   return (
-    <section className="container py-10 grid grid-cols-7 gap-5">
+    <section className="container pt-10 lg:pt-20 grid grid-cols-7 gap-5">
       <div className="col-span-2 space-y-5">
         <Image src={bannerOne} alt="Banner Image" />
         <Image src={bannerOne} alt="Banner Image" />
@@ -22,4 +22,4 @@ const BannerOne = () => {
   );
 };
 
-export default BannerOne;
+export default PromotionalBanner;

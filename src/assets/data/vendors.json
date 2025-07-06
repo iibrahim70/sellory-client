@@ -1,6 +1,7 @@
 [
   {
-    "title": "Electronics Superstore",
+    "id": "1",
+    "name": "Electronics Superstore",
     "avatar": "https://i.pinimg.com/originals/dc/f4/8b/dcf48b9433f25c5662e9f238487d4e59.png",
     "images": [
       "https://images.pexels.com/photos/19318474/pexels-photo-19318474/free-photo-of-samsung-galaxy-in-the-urban-armor-gear-case-lying-on-the-forest-floor.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -12,7 +13,8 @@
     "products": 120
   },
   {
-    "title": "Tech Haven",
+    "id": "2",
+    "name": "Tech Haven",
     "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-R0VXb70aEL6PDuG9P_fog3EJiYRgYQw90uWZl6mdmw&s",
     "images": [
       "https://images.pexels.com/photos/19558755/pexels-photo-19558755/free-photo-of-hand-in-glove-by-sunglasses-and-vitamin-c-serum.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -24,8 +26,9 @@
     "products": 20
   },
   {
-    "title": "Gadgets Galore",
-    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgiy-dLb5d0Q1tpAfwJ9tWkXzBiTNE2P6ISCHqCGZ-vA&s",
+    "id": "3",
+    "name": "Gadgets Galore",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-R0VXb70aEL6PDuG9P_fog3EJiYRgYQw90uWZl6mdmw&s",
     "images": [
       "https://images.pexels.com/photos/3771106/pexels-photo-3771106.jpeg?auto=compress&cs=tinysrgb&w=600",
       "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -36,7 +39,8 @@
     "products": 200
   },
   {
-    "title": "Digital Emporium",
+    "id": "4",
+    "name": "Digital Emporium",
     "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcGS5yHNaZ-xVcodtF3x2kzkfTSN3hX_XwqdRe7XvqgQ&s",
     "images": [
       "https://images.pexels.com/photos/7289707/pexels-photo-7289707.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -49,7 +53,8 @@
   },
 
   {
-    "title": "Gizmo Paradise",
+    "id": "5",
+    "name": "Gizmo Paradise",
     "avatar": "https://png.pngtree.com/template/20191031/ourmid/pngtree-paradise-logo-illustration-image_325792.jpg",
     "images": [
       "https://images.pexels.com/photos/5069404/pexels-photo-5069404.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -61,7 +66,8 @@
     "products": 10
   },
   {
-    "title": "Digital World",
+    "id": "6",
+    "name": "Digital World",
     "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlgmDayIHo9pP5qEthDJIQAMkCL-CjVjkivTpOphKJQ&s",
     "images": [
       "https://images.pexels.com/photos/8450508/pexels-photo-8450508.jpeg?auto=compress&cs=tinysrgb&w=600",

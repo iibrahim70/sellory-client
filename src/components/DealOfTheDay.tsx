@@ -1,65 +1,14 @@
-import Image from "next/image";
-import { Button } from "./ui/button";
-import productsData from "@/assets/data/products.json";
-import banner from "@/assets/images/banner-2.png";
-import Rating from "./ui/Rating";
-import { ShoppingCart, View } from "lucide-react";
+import data from "@/assets/data/products.json";
+import { DealOfTheDayCard } from "./cards";
 
 const DealOfTheDay = () => {
   return (
-    <section className="container py-10 space-y-10">
+    <section className="container pt-10 lg:pt-20 space-y-5 lg:space-y-10">
       <h4>Deal Of The Day</h4>
 
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
-        {productsData?.slice(0, 2)?.map((item) => (
-          <div key={item?.id} className="flex flex-col gap-5">
-            <div className="bg-white flex flex-col lg:flex-row items-center gap-5 shadow-md p-5">
-              <Image
-                src={item?.image}
-                alt={item?.title}
-                width={500}
-                height={500}
-                className="size-44 object-cover"
-              />
-
-              <div className="space-y-3">
-                <h5 className="line-clamp-1">{item?.title}</h5>
-
-                <Rating
-                  rating={item?.rating}
-                  totalRatings={item?.totalRating}
-                />
-
-                <div className="flex items-center gap-3">
-                  <h5>${item?.discountPrice}</h5>
-
-                  <div className="flex items-center gap-3">
-                    <s>${item?.price}</s>
-                    <p>-{item?.discount}%</p>
-                  </div>
-                </div>
-
-                <p>{item?.description}</p>
-
-                <div className="flex items-center gap-5">
-                  <Button
-                    variant="secondary"
-                    className="w-full flex items-center gap-3"
-                  >
-                    <View className="size-5" />
-                    Preview
-                  </Button>
-                </div>
-
-                <Button className="w-full flex items-center gap-3">
-                  <ShoppingCart className="size-5" />
-                  Add To Cart
-                </Button>
-              </div>
-            </div>
-
-            <Image src={banner} alt="Banner Image" className="w-full" />
-          </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {data?.slice(0, 8)?.map((item) => (
+          <DealOfTheDayCard item={item} key={item?.id} />
         ))}
       </div>
     </section>
